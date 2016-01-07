@@ -8,7 +8,6 @@ require 'rails_helper'
 #   end
 # end
 
-	
 feature 'User creates a foobar' do
   scenario 'they see the foobar on the page' do
     visit peaches_path

@@ -22,6 +22,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # For testing
 gem 'capybara'
+# For creating mock data for testing
+gem 'factory_girl'
+# For creating mock data also
+gem 'faker'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
