@@ -16,14 +16,12 @@ require 'rails_helper'
 #   end
 # end
 
-
 RSpec.describe PeachesController, type: :controller do
   describe "GET #index" do
     it "returns http success" do
       get :index
       expect(response).to have_http_status(:success)
     end
-
     it "populates an array of peaches" do
       peach = create(:peach)
       get :index
@@ -34,4 +32,11 @@ RSpec.describe PeachesController, type: :controller do
       response.should render_template :index
     end
   end
+  describe "GET #new" do
+      it "returns http success" do
+      get :new
+      expect(response).to have_http_status(:success)
+    end
+  end
+
 end
