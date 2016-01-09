@@ -23,9 +23,6 @@ gem 'jbuilder', '~> 2.0'
 # For testing
 gem 'capybara'
 # For creating mock data for testing
-gem 'factory_girl'
-# For creating mock data also
-gem 'faker'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
@@ -43,6 +40,9 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'rspec-rails', '~> 3.0'
+  gem 'factory_girl'
+  # For creating mock data also
+  gem 'faker'
 end
 
 group :development do

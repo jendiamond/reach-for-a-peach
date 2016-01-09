@@ -8,9 +8,10 @@ require 'rails_helper'
 #   end
 # end
 
-feature 'User creates a foobar' do
-  scenario 'they see the foobar on the page' do
+feature 'User sees a list of peaches' do
+  scenario 'they see the peaches on the page' do
     visit peaches_path
     expect(page).to have_css 'h1#peach_title', 'Peaches'
+    expect(page).to have_content 'Finding the meaning of life'
   end
 end

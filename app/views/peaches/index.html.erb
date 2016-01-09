@@ -1,2 +1,4 @@
-<h1 id="peach_title">Peaches#index</h1>
-<p>Find me in app/views/peaches/index.html.erb</p>
+<h1 id="peach_title">Peaches</h1>
+<% @peaches.each do |peach| %>
+  <h2><%= "#{peach.name} | #{peach.deadline} days left" %></h2>
+<% end %>
