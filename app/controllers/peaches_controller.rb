@@ -10,10 +10,14 @@ class PeachesController < ApplicationController
   def create
   	@peach = Peach.new(peach_params)
   	if @peach.save
-  		redirect_to peaches
+  		redirect_to peach
   	else
   		render 'new'
   	end
+  end
+
+  def show
+    @peach = Peach.find(params[:id])
   end
 
   private
