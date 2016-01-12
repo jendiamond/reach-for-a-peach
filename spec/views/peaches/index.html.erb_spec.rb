@@ -11,7 +11,6 @@ require 'rails_helper'
 feature 'User sees a list of peaches' do
   scenario 'they see the peaches on the page' do
     visit peaches_path
-    expect(page).to have_css 'h1#peach_title', 'Peaches'
-    expect(page).to have_content 'Finding the meaning of life'
+    expect(page).to have_css 'h1#peach_title' 
   end
 end
