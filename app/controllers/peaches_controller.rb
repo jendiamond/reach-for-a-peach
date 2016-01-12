@@ -10,7 +10,7 @@ class PeachesController < ApplicationController
   def create
   	@peach = Peach.new(peach_params)
   	if @peach.save
-  		redirect_to peach
+  		redirect_to @peach
   	else
   		render 'new'
   	end
