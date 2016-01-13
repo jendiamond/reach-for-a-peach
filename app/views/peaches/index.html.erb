@@ -1,5 +1,6 @@
 <h1 id="peach_title">Peaches</h1>
 <div id="create_peach"><%= link_to "Create a Peach", new_peach_path %></div>
+
 <% @peaches.each do |peach| %>
   <h2><%= "#{peach.name} | #{peach.deadline} days left" %></h2>
 <% end %>
