@@ -16,11 +16,28 @@ class PeachesController < ApplicationController
   	end
   end
 
+  def edit
+    @peach = Peach.find(params[:id])
+  end
+
+  def update
+    @peach = Peach.find(params[:id])
+    if @peach.update(peach_params)
+      redirect_to peaches_path
+    else
+      render 'edit'
+    end
+  end
+
   def show
     @peach = Peach.find(params[:id])
   end
 
   private
+
+  def set_peach
+    @peach = Peach.find(params[:id])
+  end
 
   def peach_params
   	params.require(:peach).permit(:name, :deadline)
