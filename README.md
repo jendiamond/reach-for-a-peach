@@ -4,7 +4,7 @@
 
 
 ```
-When you reach the top, 
+When you reach the top,
 that's when the climb begins.
 ```
 
