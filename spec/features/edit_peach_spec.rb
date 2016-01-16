@@ -1,20 +1,3 @@
-#Given the user is on peaches/id DONE
-#when the user clicks the button edit DONE
-#than you are redirected to the edit form DONE
-
-#given the user is on the peaches/id/edit page DONE
-#when we are on the edit page DONE
-#then the user will see the name field DONE
-#and the user will see the deadline field DONE
-
-# when the user fills in the name field with drink less coffee DONE
-# and the user fills in the deadline with 1 DONE
-# and the user clicks on the update button DONE
-# then user is redirected to the index page DONE
-
-# when the user is on peaches/index
-# then the user will see the updated peach
-
 require 'capybara/rspec'
 
 feature "Edit a Peach"
