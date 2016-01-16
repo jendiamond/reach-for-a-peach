@@ -23,7 +23,7 @@ class PeachesController < ApplicationController
   def update
     @peach = Peach.find(params[:id])
     if @peach.update(peach_params)
-      redirect_to peaches_path
+      redirect_to peach_path
     else
       render 'edit'
     end

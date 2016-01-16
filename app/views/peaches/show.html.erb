@@ -2,3 +2,5 @@
 
 <p><%= @peach.name %> | <%= @peach.deadline %> days left</p>
 <%= button_to "Edit Peach", edit_peach_path(@peach), method: :get, id:"edit_peach" %>
+
+<p> Last updated: <%= time_ago_in_words(@peach.updated_at) %> ago</p>
